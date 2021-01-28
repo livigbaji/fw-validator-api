@@ -1,0 +1,34 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    # remove the package-lock.json to kill the npm install error    
+    - run: rm -rf package-lock.json
+
+    - name: Install Nodejs
+      run: |
+        sudo apt-get update 
+        sudo apt-get -yq install curl gnupg
+        curl -sL https://deb.nodesource.com/setup_12.x  | sudo bash
+        sudo apt-get -yq install nodejs
+    # install dependencies
+    - name: Install dependencies
+      run: npm i
+
+    - name: Test
+      run: npm run test
+        
+        
+        
