@@ -1,3 +1,7 @@
+# Validator API
+
+![Test](https://github.com/bestbrain10/fw-validator-api/workflows/Test/badge.svg?branch=master)
+
 ## How to Install 
 
 - Install NodeJS and NPM. Use this link and follow the steps for your own operating system https://nodejs.org/en/download/
