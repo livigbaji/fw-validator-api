@@ -1,0 +1,21 @@
+{
+  "name": "flutterwave",
+  "version": "1.0.0",
+  "description": "Validation API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage & rm -rf test-results",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.1"
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "roots": [
+        "<rootDir>/"
+    ],
+    "clearMocks": true,
+    "resetModules": true,
+    "verbose": true,
+    "collectCoverageFrom": [
+        "**/*.js",
+        "!__tests__/*",
+        "!__mocks__/*",
+        "!routes/*",
+        "!index.js",
+        "!app.js",
+        "!test-results/*"
+    ],
+    "moduleFileExtensions": [
+        "js",
+        "json"
+    ],
+    "testRegex": [
+        ".spec.js$",
+        ".test.js$",
+        "!test-results/*"
+    ],
+    "coverageDirectory": "test-results",
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+        "^@/(.*)$": "<rootDir>/$1"
+    },
+    "coverageThreshold": {
+        "global": {
+            "branches": 85,
+            "functions": 85,
+            "lines": 85,
+            "statements": 85
+        }
+    }
+}
