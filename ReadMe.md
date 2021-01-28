@@ -6,9 +6,9 @@
 
 - From your terminal or command line run
     
-    - `git clone git@gitlab.com:korapay-engineering/livinus-igbaji.git`
+    - `git clone git@github.com:bestbrain10/fw-validator-api.git`
 
-    - `cd livinus-igbaji`
+    - `cd fw-validator-api`
 
     - `npm install`
 
